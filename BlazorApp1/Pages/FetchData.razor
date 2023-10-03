@@ -1,0 +1,52 @@
+﻿@page "/fetchdata"
+@using Microsoft.Data.Sqlite
+@using System.Data
+@using System.IO
+
+<PageTitle>Weather forecast</PageTitle>
+
+<h3>SQLite Data</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var data in dataList)
+        {
+            <tr>
+                <td>@data.Id</td>
+                <td>@data.Name</td>
+                <td>@data.Edad</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<button @onclick="ExportToExcel">Export to Excel</button>
+
+@code {
+    private List<Datas> dataList;
+
+    protected override void OnInitialized()
+    {
+        var connectionString = "Data Source=data.db";
+        var database = new Database(connectionString);
+        dataList = database.GetData();
+    }
+    private void ExportToExcel()
+    {
+        var csvData = new System.Text.StringBuilder();
+        csvData.AppendLine("Id,Name,Description");
+        foreach (var data in dataList)
+        {
+            csvData.AppendLine($"{data.Id},{data.Name},{data.Edad}");
+        }
+        var fileName = "data.csv";
+        var filePath = Path.Combine(Directory.GetCurrentDirectory(), fileName);
+        File.WriteAllText(filePath, csvData.ToString());
+    }
+}
