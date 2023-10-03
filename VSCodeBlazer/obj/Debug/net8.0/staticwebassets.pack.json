@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\VSCodeBlazer\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\VSCodeBlazer.bundle.scp.css",
+      "PackagePath": "staticwebassets\\VSCodeBlazer.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\VSCodeBlazer\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "D:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\VSCodeBlazer\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\VSCodeBlazer\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\VSCodeBlazer\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.VSCodeBlazer.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.VSCodeBlazer.props",
+      "PackagePath": "build\\VSCodeBlazer.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.VSCodeBlazer.props",
+      "PackagePath": "buildMultiTargeting\\VSCodeBlazer.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.VSCodeBlazer.props",
+      "PackagePath": "buildTransitive\\VSCodeBlazer.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

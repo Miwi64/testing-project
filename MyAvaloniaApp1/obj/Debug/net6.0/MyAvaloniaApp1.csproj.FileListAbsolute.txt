@@ -1,0 +1,7 @@
+D:\ITE\Trabajos Semestres Cursados\Trabajos 9no Semestre\testing-project\MyAvaloniaApp1\obj\Debug\net6.0\MyAvaloniaApp1.csproj.AssemblyReference.cache
+D:\ITE\Trabajos Semestres Cursados\Trabajos 9no Semestre\testing-project\MyAvaloniaApp1\obj\Debug\net6.0\Avalonia\Resources.Inputs.cache
+D:\ITE\Trabajos Semestres Cursados\Trabajos 9no Semestre\testing-project\MyAvaloniaApp1\obj\Debug\net6.0\Avalonia\resources
+D:\ITE\Trabajos Semestres Cursados\Trabajos 9no Semestre\testing-project\MyAvaloniaApp1\obj\Debug\net6.0\MyAvaloniaApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITE\Trabajos Semestres Cursados\Trabajos 9no Semestre\testing-project\MyAvaloniaApp1\obj\Debug\net6.0\MyAvaloniaApp1.AssemblyInfoInputs.cache
+D:\ITE\Trabajos Semestres Cursados\Trabajos 9no Semestre\testing-project\MyAvaloniaApp1\obj\Debug\net6.0\MyAvaloniaApp1.AssemblyInfo.cs
+D:\ITE\Trabajos Semestres Cursados\Trabajos 9no Semestre\testing-project\MyAvaloniaApp1\obj\Debug\net6.0\MyAvaloniaApp1.csproj.CoreCompileInputs.cache

@@ -1,0 +1,80 @@
+{
+  "format": 1,
+  "restore": {
+    "d:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\MyWpfApp\\MyWpfApp.csproj": {}
+  },
+  "projects": {
+    "d:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\MyWpfApp\\MyWpfApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "d:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\MyWpfApp\\MyWpfApp.csproj",
+        "projectName": "MyWpfApp",
+        "projectPath": "d:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\MyWpfApp\\MyWpfApp.csproj",
+        "packagesPath": "C:\\Users\\caden\\.nuget\\packages\\",
+        "outputPath": "d:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\MyWpfApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\caden\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\8.0.100-rc.1.23463.5\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
