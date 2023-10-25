@@ -2,8 +2,13 @@
 @using Microsoft.Data.Sqlite
 @using System.Data
 @using System.IO
+@using OfficeOpenXml;
+@using OfficeOpenXml.Style;
+@using Microsoft.JSInterop
+@using System.Drawing;
+@inject IJSRuntime JSRuntime
 
-<PageTitle>Weather forecast</PageTitle>
+<PageTitle>Tablas y Excel</PageTitle>
 
 <h3>SQLite Data</h3>
 
@@ -27,6 +32,7 @@
     </tbody>
 </table>
 <button @onclick="ExportToExcel">Export to Excel</button>
+<button @onclick="ExportData">Exportar datos a Excel</button>
 
 @code {
     private List<Datas> dataList;
@@ -48,5 +54,136 @@
         var fileName = "data.csv";
         var filePath = Path.Combine(Directory.GetCurrentDirectory(), fileName);
         File.WriteAllText(filePath, csvData.ToString());
+    }
+    public async Task ExportData()
+    {
+        // Conectar con la base de datos SQLite
+        using var connection = new SqliteConnection("Data Source=data.db");
+        await connection.OpenAsync();
+
+        // Crear un objeto DataTable para almacenar los datos de la tabla de SQLite
+        var dataTable = new DataTable();
+
+        // Ejecutar una consulta para obtener todos los registros de la tabla
+        using var command = new SqliteCommand($"SELECT * FROM Datos", connection);
+        using var reader = await command.ExecuteReaderAsync();
+
+        // Llenar el objeto DataTable con los datos obtenidos de la consulta
+        dataTable.Load(reader);
+
+        // Crear un objeto ExcelPackage para escribir los datos en un archivo Excel
+        using var excelPackage = new ExcelPackage();
+
+        // Crear una hoja de cálculo en el archivo Excel
+        var worksheet = excelPackage.Workbook.Worksheets.Add("2005");
+        worksheet.Cells["A1"].Value = "LEBEBC ART 13, FRACC II";
+        worksheet.Cells["A2"].Value = "LEBEBC ART 13, FRACC III";
+        worksheet.Cells["A3"].Value = "Nombre de la Institucion Educativa";
+        worksheet.Cells["A4"].Value = "Nombre del Plan y programa educativo";
+        worksheet.Cells["A5"].Value = "Generacion de egresados numero";
+        worksheet.Cells["A6"].Value = "Año";
+        worksheet.Cells["A7"].Value = "Numero de egresados";
+        worksheet.Cells["B1:D1"].Merge = true;
+        worksheet.Cells["B1"].Value = "Relacion de personas que hayan concluido los estudios professionales en los niveles de educacion superior";
+        worksheet.Cells["B2:D2"].Merge = true;
+        worksheet.Cells["B2"].Value = "Relacion de personas a quienes les haya expedido titulo profesional";
+        worksheet.Cells["B3:D3"].Merge = true;
+        worksheet.Cells["B3"].Value = "Instituto Tecnologico de Ensenada";
+        worksheet.Cells["B4:D4"].Merge = true;
+        worksheet.Cells["B4"].Value = "Ingenieria en Sistemas Computacionales";
+        worksheet.Cells["B5:D5"].Merge = true;
+        worksheet.Cells["B5"].Value = "1 Generacion";
+        worksheet.Cells["B6:D6"].Merge = true;
+        worksheet.Cells["B6"].Value = "2005";
+        worksheet.Cells["B7:D7"].Merge = true;
+        worksheet.Cells["B7"].Value = "4";
+
+        worksheet.Cells["A8"].Value = "ID";
+        worksheet.Cells["B8"].Value = "Name";
+        worksheet.Cells["C8"].Value = "Edad";
+        using (var range = worksheet.Cells[1, 1, 7, 3])  //Estlizar el encabezado o filas determinadas
+        {
+            range.Style.Fill.PatternType = ExcelFillStyle.Solid; //Tipo de Patron
+            range.Style.Fill.BackgroundColor.SetColor(Color.LightBlue); //Color de relleno
+            range.Style.Font.Color.SetColor(Color.Black); //color de letras
+        }
+        using (var range = worksheet.Cells["B3:B7"])  //Estlizar el encabezado o filas determinadas
+        {
+            range.Style.Font.Bold=true;
+        }
+
+        worksheet.Cells["D8"].Value = "Año";
+        worksheet.Cells["D9:D12"].Value = "2005";
+
+        // Escribir los datos del objeto DataTable en la hoja de cálculo
+        var startRow = 9;
+        foreach (DataRow row in dataTable.Rows)
+        {
+            var col = 1;
+            foreach (DataColumn column in dataTable.Columns)
+            {
+                worksheet.Cells[startRow, col].Value = row[column.ColumnName];
+                col++;
+            }
+            startRow++;
+        }
+        worksheet.Cells["A1:H400"].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+        worksheet.Cells.AutoFitColumns(); //Auto Acomodar columnas
+
+
+
+
+        var worksheet1 = excelPackage.Workbook.Worksheets.Add("2006"); //Auto Acomodar columnas
+        worksheet1.Cells["A1"].Value = "LEBEBC ART 13, FRACC II";
+        worksheet1.Cells["A2"].Value = "LEBEBC ART 13, FRACC III";
+        worksheet1.Cells["A3"].Value = "Nombre de la Institucion Educativa";
+        worksheet1.Cells["A4"].Value = "Nombre del Plan y programa educativo";
+        worksheet1.Cells["A5"].Value = "Generacion de egresados numero";
+        worksheet1.Cells["A6"].Value = "Año";
+        worksheet1.Cells["A7"].Value = "Numero de egresados";
+        worksheet1.Cells["B1:D1"].Merge = true;
+        worksheet1.Cells["B1"].Value = "Relacion de personas que hayan concluido los estudios professionales en los niveles de educacion superior";
+        worksheet1.Cells["B2:D2"].Merge = true;
+        worksheet1.Cells["B2"].Value = "Relacion de personas a quienes les haya expedido titulo profesional";
+        worksheet1.Cells["B3:D3"].Merge = true;
+        worksheet1.Cells["B3"].Value = "Instituto Tecnologico de Ensenada";
+        worksheet1.Cells["B4:D4"].Merge = true;
+        worksheet1.Cells["B4"].Value = "Ingenieria en Sistemas Computacionales";
+        worksheet1.Cells["B5:D5"].Merge = true;
+        worksheet1.Cells["B5"].Value = "1 Generacion";
+        worksheet1.Cells["B6:D6"].Merge = true;
+        worksheet1.Cells["B6"].Value = "2006";
+        worksheet1.Cells["B7:D7"].Merge = true;
+        worksheet1.Cells["B7"].Value = "4";
+
+        worksheet1.Cells["A8"].Value = "ID";
+        worksheet1.Cells["B8"].Value = "Name";
+        worksheet1.Cells["C8"].Value = "Edad";
+        using (var range = worksheet1.Cells[1, 1, 7, 3])  //Estlizar el encabezado o filas determinadas
+        {
+            range.Style.Fill.PatternType = ExcelFillStyle.Solid; //Tipo de Patron
+            range.Style.Fill.BackgroundColor.SetColor(Color.LightBlue); //Color de relleno
+            range.Style.Font.Color.SetColor(Color.Black); //color de letras
+        }
+        using (var range = worksheet1.Cells["B3:B7"])  //Estlizar el encabezado o filas determinadas
+        {
+            range.Style.Font.Bold = true;
+        }
+
+        worksheet1.Cells["D8"].Value = "Año";
+
+        worksheet1.Cells["A1:H400"].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+        worksheet1.Cells.AutoFitColumns();
+
+
+        // Guardar los datos en un archivo Excel
+        var filePath = Path.Combine(Path.GetTempPath(), "exported_data.xlsx");
+        File.WriteAllBytes(filePath, excelPackage.GetAsByteArray());
+
+        // Descargar el archivo Excel en el navegador
+        var bytes = File.ReadAllBytes(filePath);
+        var fileName = "exported_data.xlsx";
+        var contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+        await JSRuntime.InvokeVoidAsync("downloadFile", fileName, bytes, contentType);
     }
 }

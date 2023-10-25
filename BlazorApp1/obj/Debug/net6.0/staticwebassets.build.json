@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CMS3xrVghDL+zTV5kWmkV/udpCWYnzho3adcULTAwh0=",
+  "Hash": "bGxiFfZ1jg9/oDWKikEhXmL5hBXKJVBxHvAhr4LYoKM=",
   "Source": "BlazorApp1",
   "BasePath": "_content/BlazorApp1",
   "Mode": "Default",
@@ -253,6 +253,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "D:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\BlazorApp1\\wwwroot\\downloadFile.js",
+      "SourceId": "BlazorApp1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\BlazorApp1\\wwwroot\\",
+      "BasePath": "_content/BlazorApp1",
+      "RelativePath": "downloadFile.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\downloadFile.js"
     },
     {
       "Identity": "D:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\BlazorApp1\\wwwroot\\favicon.ico",

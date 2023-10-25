@@ -53,3 +53,14 @@ D:\ITE\Trabajos Semestres Cursados\Trabajos 9no Semestre\testing-project\BlazorA
 D:\ITE\Trabajos Semestres Cursados\Trabajos 9no Semestre\testing-project\BlazorApp1\obj\Debug\net6.0\BlazorApp1.pdb
 D:\ITE\Trabajos Semestres Cursados\Trabajos 9no Semestre\testing-project\BlazorApp1\obj\Debug\net6.0\BlazorApp1.genruntimeconfig.cache
 D:\ITE\Trabajos Semestres Cursados\Trabajos 9no Semestre\testing-project\BlazorApp1\obj\Debug\net6.0\ref\BlazorApp1.dll
+D:\ITE\Trabajos Semestres Cursados\Trabajos 9no Semestre\testing-project\BlazorApp1\bin\Debug\net6.0\EPPlus.dll
+D:\ITE\Trabajos Semestres Cursados\Trabajos 9no Semestre\testing-project\BlazorApp1\bin\Debug\net6.0\EPPlus.Interfaces.dll
+D:\ITE\Trabajos Semestres Cursados\Trabajos 9no Semestre\testing-project\BlazorApp1\bin\Debug\net6.0\EPPlus.System.Drawing.dll
+D:\ITE\Trabajos Semestres Cursados\Trabajos 9no Semestre\testing-project\BlazorApp1\bin\Debug\net6.0\Microsoft.IO.RecyclableMemoryStream.dll
+D:\ITE\Trabajos Semestres Cursados\Trabajos 9no Semestre\testing-project\BlazorApp1\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\ITE\Trabajos Semestres Cursados\Trabajos 9no Semestre\testing-project\BlazorApp1\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\ITE\Trabajos Semestres Cursados\Trabajos 9no Semestre\testing-project\BlazorApp1\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+D:\ITE\Trabajos Semestres Cursados\Trabajos 9no Semestre\testing-project\BlazorApp1\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\ITE\Trabajos Semestres Cursados\Trabajos 9no Semestre\testing-project\BlazorApp1\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\ITE\Trabajos Semestres Cursados\Trabajos 9no Semestre\testing-project\BlazorApp1\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\ITE\Trabajos Semestres Cursados\Trabajos 9no Semestre\testing-project\BlazorApp1\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
