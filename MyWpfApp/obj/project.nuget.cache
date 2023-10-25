@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "roM5Op54OVQAvpq/q647E3BpWAbBWwr5wOP8BMy3BIlLFfnpFr75BFGifFDllAfXY4vKZx21Lah5iXGYHFLqWw==",
+  "dgSpecHash": "HCQq21pTTDD/F7SBKaIY6FBE7K+QD6LYem9NPBU+2Dq8IhY4eB1zgHAsVjrWsziVnfxlOdbyVqSjExUz3m2OZg==",
   "success": true,
-  "projectFilePath": "d:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\MyWpfApp\\MyWpfApp.csproj",
+  "projectFilePath": "D:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\MyWpfApp\\MyWpfApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\caden\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\caden\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.11\\microsoft.data.sqlite.core.7.0.11.nupkg.sha512",

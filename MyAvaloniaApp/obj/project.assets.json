@@ -5753,19 +5753,21 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\MyAvaloniaApp\\MyAvaloniaApp.csproj",
+      "projectUniqueName": "D:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\MyAvaloniaApp\\MyAvaloniaApp.csproj",
       "projectName": "MyAvaloniaApp",
-      "projectPath": "d:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\MyAvaloniaApp\\MyAvaloniaApp.csproj",
+      "projectPath": "D:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\MyAvaloniaApp\\MyAvaloniaApp.csproj",
       "packagesPath": "C:\\Users\\caden\\.nuget\\packages\\",
-      "outputPath": "d:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\MyAvaloniaApp\\obj\\",
+      "outputPath": "D:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\MyAvaloniaApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\caden\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\caden\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

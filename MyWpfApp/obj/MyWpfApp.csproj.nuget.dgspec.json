@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "d:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\MyWpfApp\\MyWpfApp.csproj": {}
+    "D:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\MyWpfApp\\MyWpfApp.csproj": {}
   },
   "projects": {
-    "d:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\MyWpfApp\\MyWpfApp.csproj": {
+    "D:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\MyWpfApp\\MyWpfApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\MyWpfApp\\MyWpfApp.csproj",
+        "projectUniqueName": "D:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\MyWpfApp\\MyWpfApp.csproj",
         "projectName": "MyWpfApp",
-        "projectPath": "d:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\MyWpfApp\\MyWpfApp.csproj",
+        "projectPath": "D:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\MyWpfApp\\MyWpfApp.csproj",
         "packagesPath": "C:\\Users\\caden\\.nuget\\packages\\",
-        "outputPath": "d:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\MyWpfApp\\obj\\",
+        "outputPath": "D:\\ITE\\Trabajos Semestres Cursados\\Trabajos 9no Semestre\\testing-project\\MyWpfApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\caden\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\caden\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0-windows"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
